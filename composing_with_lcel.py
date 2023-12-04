@@ -22,4 +22,4 @@ chat_prompt = ChatPromptTemplate.from_messages([
 ])
 chain = chat_prompt | ChatOpenAI() | CommaSeparatedListOutputParser()
 
-print(chain.invoke({"text": "colors"}))
+print(chain.invoke({"text": "sports"}))
